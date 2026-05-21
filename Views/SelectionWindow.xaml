@@ -1,0 +1,24 @@
+<Window x:Class="WPF_Translator_Screen.Views.SelectionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SelectionWindow" Height="450" Width="800"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent"
+        ShowInTaskbar="False" Topmost="True" Loaded="Window_Loaded" MouseDown="Window_MouseDown"
+        MouseUp="Window_MouseUp" MouseMove="Window_MouseMove">
+    <Canvas x:Name="RootCanvas" Background="Transparent">
+		<Path x:Name ="OverlayPath"
+			  Fill="#66000000"
+			  IsHitTestVisible="False"
+			  Panel.ZIndex="0"/>
+
+		<Rectangle x:Name="SelectionRect"
+						  Visibility="Collapsed"
+						  Stroke="Lime"
+						  StrokeThickness="3"
+						  Fill="{x:Null}"
+					      SnapsToDevicePixels="True"
+						  IsHitTestVisible="False"
+						  Panel.ZIndex="10"/>
+	</Canvas>
+
+</Window>

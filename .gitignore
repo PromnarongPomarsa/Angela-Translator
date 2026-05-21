@@ -1,0 +1,60 @@
+# Build output
+**/obj/
+**/bin/
+publish/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userprefs
+*.rsuser
+*.sln.docstates
+
+# Rider / JetBrains
+.idea/
+
+# Logs
+*.log
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+
+# Test results
+TestResults/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python OCR environment
+.venv/
+ocr/.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Python build artifacts
+build/
+dist/
+*.spec
+
+# Local caches / model caches
+.paddlex/
+.paddleocr/
+.cache/
+ocr/.cache/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Optional secrets/local config
+appsettings.Development.json
+.env
+.env.*

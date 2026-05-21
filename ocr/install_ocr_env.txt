@@ -1,0 +1,27 @@
+@echo off
+setlocal
+cd /d %~dp0
+
+if not exist ".venv\Scripts\python.exe" (
+    echo Creating virtual environment...
+    python -m venv .venv
+)
+
+call .venv\Scripts\activate
+
+echo Upgrading pip...
+python -m pip install --upgrade pip
+
+echo Installing OCR dependencies...
+pip install -r requirements.txt
+
+if %errorlevel% neq 0 (
+    echo Failed to install OCR dependencies.
+    pause
+    exit /b 1
+)
+
+echo OCR environment setup completed.
+pause
+endlocal
+exit /b 0

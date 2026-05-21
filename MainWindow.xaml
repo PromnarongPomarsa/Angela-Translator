@@ -1,0 +1,494 @@
+﻿<Window x:Class="WPF_Translator_Screen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Translator_Screen"
+        mc:Ignorable="d"
+        Title="Translator"
+        Height="160"
+        Width="560"
+        MinWidth="650"
+        Icon="root/icons/translator.ico"
+        WindowStartupLocation="CenterScreen"
+        Background="#F5F4F0"
+        ResizeMode="CanResize">
+
+    <Window.Resources>
+
+        <!-- ComboBox Style -->
+        <Style x:Key="ModernComboBox" TargetType="ComboBox">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="#1A1A1A"/>
+            <Setter Property="BorderBrush" Value="#D0CFC8"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="FontWeight" Value="Medium"/>
+            <Setter Property="Padding" Value="12,0"/>
+            <Setter Property="Height" Value="52"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ComboBox">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="10">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="36"/>
+                                </Grid.ColumnDefinitions>
+                                <ContentPresenter Grid.Column="0"
+                                                  Content="{TemplateBinding SelectionBoxItem}"
+                                                  ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
+                                                  VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"
+                                                  Margin="12,0,0,0"/>
+                                <Path Grid.Column="1"
+                                      Data="M 0,0 L 6,6 L 12,0"
+                                      Stroke="#888888"
+                                      StrokeThickness="1.5"
+                                      HorizontalAlignment="Center"
+                                      VerticalAlignment="Center"
+                                      StrokeEndLineCap="Round"
+                                      StrokeStartLineCap="Round"/>
+                                <ToggleButton Grid.ColumnSpan="2"
+                                              IsChecked="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
+                                              Opacity="0"/>
+                                <Popup IsOpen="{TemplateBinding IsDropDownOpen}"
+                                       Placement="Bottom"
+                                       AllowsTransparency="True">
+                                    <Border Background="White"
+                                            BorderBrush="#D0CFC8"
+                                            BorderThickness="1"
+                                            CornerRadius="10"
+                                            Margin="0,4,0,0"
+                                            MinWidth="{TemplateBinding ActualWidth}">
+                                        <Border.Effect>
+                                            <DropShadowEffect Color="#000000" Opacity="0.08" BlurRadius="12" ShadowDepth="4"/>
+                                        </Border.Effect>
+                                        <ScrollViewer>
+                                            <ItemsPresenter/>
+                                        </ScrollViewer>
+                                    </Border>
+                                </Popup>
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="BorderBrush" Value="#999998"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- ComboBoxItem Style -->
+        <Style TargetType="ComboBoxItem">
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Padding" Value="16,10"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ComboBoxItem">
+                        <Border Background="{TemplateBinding Background}"
+                                Padding="{TemplateBinding Padding}">
+                            <ContentPresenter/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#F5F4F0"/>
+                            </Trigger>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="Background" Value="#EEECE6"/>
+                                <Setter Property="FontWeight" Value="Medium"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Primary Button Style -->
+        <Style x:Key="PrimaryButton" TargetType="Button">
+            <Setter Property="Background" Value="#1A1A1A"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Medium"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="9">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#333333"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#111111"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Secondary Button Style -->
+        <Style x:Key="SecondaryButton" TargetType="Button">
+            <Setter Property="Background" Value="#EEECE6"/>
+            <Setter Property="Foreground" Value="#1A1A1A"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Medium"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="9">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#E2E0D8"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#D4D2CA"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Radio Chip Style -->
+        <Style x:Key="RadioChip" TargetType="RadioButton">
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Foreground" Value="#1A1A1A"/>
+            <Setter Property="Background" Value="#EEECE6"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RadioButton">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="8"
+                                Padding="16,9">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter Property="Background" Value="#1A1A1A"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#D4D2CA"/>
+                            </Trigger>
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="IsChecked" Value="True"/>
+                                    <Condition Property="IsMouseOver" Value="True"/>
+                                </MultiTrigger.Conditions>
+                                <Setter Property="Background" Value="#333333"/>
+                            </MultiTrigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </Window.Resources>
+
+    <Grid Background="#F5F4F0">
+
+        <!-- ===== MAIN BAR ===== -->
+        <Border Margin="16,16,39,0"
+                Padding="20,16"
+                Background="White"
+                BorderBrush="#D0CFC8"
+                BorderThickness="1"
+                CornerRadius="14"
+                VerticalAlignment="Top">
+            <Border.Effect>
+                <DropShadowEffect Color="#000000" Opacity="0.04" BlurRadius="8" ShadowDepth="2"/>
+            </Border.Effect>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="AUto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Source Language -->
+                <ComboBox x:Name="SourceLanguageCombo"
+                          Grid.Column="0"
+                          Style="{StaticResource ModernComboBox}"
+                          SelectedIndex="0">
+                    <ComboBoxItem Content="English"/>
+                    <ComboBoxItem Content="Japanese"/>
+                    <ComboBoxItem Content="Chinese"/>
+                    <ComboBoxItem Content="Korean"/>
+                </ComboBox>
+
+                <!-- Arrow -->
+                <TextBlock Grid.Column="1"
+                           Text="→"
+                           FontSize="20"
+                           Foreground="#AAAAAA"
+                           VerticalAlignment="Center"
+                           Margin="16,0"/>
+
+                <!-- Target Language -->
+                <ComboBox x:Name="TargetLanguageCombo"
+                          Grid.Column="2"
+                          Style="{StaticResource ModernComboBox}"
+                          SelectedIndex="1">
+                    <ComboBoxItem Content="English"/>
+                    <ComboBoxItem Content="Thai"/>
+                    <ComboBoxItem Content="Japanese"/>
+                    <ComboBoxItem Content="Chinese"/>
+                    <ComboBoxItem Content="Korean"/>
+                </ComboBox>
+
+                <!-- Divider -->
+                <Border Grid.Column="3"
+                        Width="1"
+                        Background="#E0DFDA"
+                        Margin="20,8"/>
+
+                <!-- Capture Button -->
+                <Button x:Name="SelectAreaButton"
+                        Grid.Column="4"
+                        Width="108"
+                        Height="52"
+                        Style="{StaticResource SecondaryButton}"
+                        Click="SelectAreaButton_Click"
+                        Margin="0,0,10,0">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <Path Data="M3,3 L3,9 M3,3 L9,3 M21,3 L15,3 M21,3 L21,9 M3,21 L3,15 M3,21 L9,21 M21,21 L15,21 M21,21 L21,15"
+                              Stroke="#1A1A1A"
+                              StrokeThickness="1.5"
+                              Width="16" Height="16"
+                              Stretch="Uniform"
+                              Margin="0,0,7,0"
+                              StrokeEndLineCap="Round"
+                              StrokeStartLineCap="Round"/>
+                        <TextBlock Text="Capture" FontFamily="Segoe UI" FontSize="14" FontWeight="Medium"/>
+                    </StackPanel>
+                </Button>
+
+                <!-- Translate Button + Settings Popup ยึดกับปุ่มนี้ -->
+                <Grid Grid.Column="5">
+                    <Button x:Name="TranslateButton"
+                            Width="112"
+                            Height="52"
+                            Style="{StaticResource PrimaryButton}"
+                            Click="TranslateButton_Click">
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <Path Data="M5,8 L11,14 M4,14 L10,8 L12,5 M2,5 L14,5 M7,2 L8,2 M22,22 L17,12 L12,22 M14,18 L20,18"
+                                  Stroke="White"
+                                  StrokeThickness="1.5"
+                                  Width="16" Height="16"
+                                  Stretch="Uniform"
+                                  Margin="0,0,7,0"
+                                  StrokeEndLineCap="Round"
+                                  StrokeStartLineCap="Round"/>
+                            <TextBlock Text="Translate" FontFamily="Segoe UI" FontSize="14" FontWeight="Medium"/>
+                        </StackPanel>
+                    </Button>
+
+                    <!-- Settings Badge -->
+                    <Border HorizontalAlignment="Center"
+                            VerticalAlignment="Top"
+                            Margin="0,-18,0,0"
+                            Background="#F5F4F0"
+                            CornerRadius="0,0,6,6"
+                            Cursor="Hand"
+                            MouseLeftButtonUp="SettingsBadge_Click"
+                            Padding="10,3,10,5"
+                            Panel.ZIndex="10">
+                        <TextBlock Text="⚙ Settings"
+                                   FontFamily="Segoe UI"
+                                   FontSize="10"
+                                   Foreground="#888888"/>
+                    </Border>
+
+                    <!-- Settings Popup -->
+                    <Popup x:Name="SettingsPopup"
+                           PlacementTarget="{Binding ElementName=TranslateButton}"
+                           Placement="Bottom"
+                           StaysOpen="False"
+                           AllowsTransparency="True"
+                           PopupAnimation="Fade">
+                        <Border Background="White"
+                                BorderBrush="#D0CFC8"
+                                BorderThickness="1"
+                                CornerRadius="14"
+                                Padding="24,20"
+                                MinWidth="400"
+                                Margin="0,6,0,0">
+                            <Border.Effect>
+                                <DropShadowEffect Color="#000000" Opacity="0.12" BlurRadius="20" ShadowDepth="6"/>
+                            </Border.Effect>
+
+                            <StackPanel>
+
+                                <!-- Modal Header -->
+                                <TextBlock Text="Settings"
+                                           FontFamily="Segoe UI"
+                                           FontSize="15"
+                                           FontWeight="Medium"
+                                           Foreground="#1A1A1A"
+                                           Margin="0,0,0,14"/>
+
+                                <Border Height="1" Background="#F0EFE9" Margin="0,0,0,14"/>
+
+                                <!-- Translate by -->
+                                <Grid Margin="0,0,0,12">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="110"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="0"
+                                               Text="Translate by"
+                                               FontFamily="Segoe UI"
+                                               FontSize="13"
+                                               Foreground="#555555"
+                                               VerticalAlignment="Center"/>
+                                    <StackPanel Grid.Column="1" Orientation="Horizontal">
+                                        <RadioButton x:Name="RadioAzure"
+                                                     GroupName="TranslateBy"
+                                                     Style="{StaticResource RadioChip}"
+                                                     IsChecked="True"
+                                                     Margin="0,0,8,0">
+                                            <TextBlock Text="Azure" FontFamily="Segoe UI" FontSize="13"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="RadioGoogle"
+                                                     GroupName="TranslateBy"
+                                                     Style="{StaticResource RadioChip}">
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock Text="Google" FontFamily="Segoe UI" FontSize="13"/>
+                                                <TextBlock Text=" · best for games"
+                                                           FontFamily="Segoe UI"
+                                                           FontSize="11"
+                                                           Foreground="#AAAAAA"
+                                                           VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </RadioButton>
+                                        <!--<RadioButton x:Name="RadioLibre"
+                                                     GroupName="TranslateBy"
+                                                     Style="{StaticResource RadioChip}">
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock Text="Libre" FontFamily="Segoe UI" FontSize="13"/>
+                                                <TextBlock Text=" · best for games"
+                                                           FontFamily="Segoe UI"
+                                                           FontSize="11"
+                                                           Foreground="#AAAAAA"
+                                                           VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </RadioButton>
+                                        <RadioButton x:Name="RadioLara"
+                                                     GroupName="TranslateBy"
+                                                     Style="{StaticResource RadioChip}">
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock Text="Lara" FontFamily="Segoe UI" FontSize="13"/>
+                                                <TextBlock Text=" · best for games"
+                                                           FontFamily="Segoe UI"
+                                                           FontSize="11"
+                                                           Foreground="#AAAAAA"
+                                                           VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </RadioButton>-->
+                                        <RadioButton x:Name="RadioOllama"
+                                                     GroupName="TranslateBy"
+                                                     Style="{StaticResource RadioChip}">
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock Text="Ollama" FontFamily="Segoe UI" FontSize="13"/>
+                                                <TextBlock Text=" · best for games"
+                                                           FontFamily="Segoe UI"
+                                                           FontSize="11"
+                                                           Foreground="#AAAAAA"
+                                                           VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </RadioButton>
+
+                                    </StackPanel>
+                                </Grid>
+
+                                <!-- OCR by -->
+                                <!--<Grid Margin="0,0,0,18">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="110"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="0"
+                                               Text="OCR by"
+                                               FontFamily="Segoe UI"
+                                               FontSize="13"
+                                               Foreground="#555555"
+                                               VerticalAlignment="Center"/>
+                                    <StackPanel Grid.Column="1" Orientation="Horizontal">
+                                        --><!--<RadioButton x:Name="RadioPaddle"
+                                                     GroupName="OcrBy"
+                                                     Style="{StaticResource RadioChip}"
+                                                     IsChecked="True"
+                                                     Margin="0,0,8,0">
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock Text="Paddle" FontFamily="Segoe UI" FontSize="13"/>
+                                                <TextBlock Text=" · best for games"
+                                                           FontFamily="Segoe UI"
+                                                           FontSize="11"
+                                                           Foreground="#AAAAAA"
+                                                           VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </RadioButton>-->
+                                        <!--<RadioButton x:Name="RadioTesseract"
+                                                     GroupName="OcrBy"
+                                                     Style="{StaticResource RadioChip}">
+                                            <TextBlock Text="Tesseract" FontFamily="Segoe UI" FontSize="13"/>
+                                        </RadioButton>--><!--
+                                    </StackPanel>
+                                </Grid>-->
+
+                                <Border Height="1" Background="#F0EFE9" Margin="0,0,0,14"/>
+
+                                <!-- Footer -->
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                    <Button Content="Cancel"
+                                            Width="80"
+                                            Height="34"
+                                            Style="{StaticResource SecondaryButton}"
+                                            Click="CancelSettings_Click"
+                                            Margin="0,0,8,0"/>
+                                    <Button Content="Save"
+                                            Width="80"
+                                            Height="34"
+                                            Style="{StaticResource PrimaryButton}"
+                                            Click="SaveSettings_Click"/>
+                                </StackPanel>
+
+                            </StackPanel>
+                        </Border>
+                    </Popup>
+                </Grid>
+
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

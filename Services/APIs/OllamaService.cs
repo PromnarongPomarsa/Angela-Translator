@@ -122,33 +122,6 @@ namespace WPF_Translator_Screen.Services.API
             using var doc = JsonDocument.Parse(body);
             return doc.RootElement.GetProperty("response").GetString()?.Trim() ?? "";
         }
-
-
-
-        // Auto เลือก mode ตาม config
-        public async Task<string> TranslateAutoAsync(
-            byte[] imageBytes,
-            string ocrText,
-            string targetLanguage = "Thai",
-            CancellationToken cancellationToken = default)
-        {
-
-            bool useGpu = bool.Parse(_configuration["Ollama:UseGpuMode"] ?? "false");
-            string cpuModel = _configuration["Ollama:CpuModel"] ?? "qwen2.5:1.5b";
-            string gpuModel = _configuration["Ollama:GpuModel"] ?? "qwen2.5vl:3b";
-
-            if (useGpu && imageBytes != null)
-            {
-                Debug.WriteLine("[Mode] GPU Vision");
-                return await TranslateFromImageAsync(imageBytes, targetLanguage, gpuModel, cancellationToken);
-            }
-            else
-            {
-                Debug.WriteLine("[Mode] CPU Text");
-                return await RefineTranslationAsync(ocrText, "Japanese", targetLanguage, cpuModel, cancellationToken);
-            }
-        }
-
         private string MapGemma3Lang(string? isoLanguage)
         {
             return isoLanguage?.ToLower().Trim() switch

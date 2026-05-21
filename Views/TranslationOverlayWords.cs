@@ -49,12 +49,10 @@ namespace WPF_Translator_Screen.Views
 
                     double maxBoxWidth = Math.Max(wDip, Width - leftDip - 8);
                     double maxBoxHeight = Math.Max(hDip, Height - topDip - 8);
-                    double initialAvailableW = Math.Max(10, wDip - paddingX);
-                    double fontSize = CalculateFontSizeForOriginalBox(text, initialAvailableW, hDip, paddingY);
-                    double desiredTextWidth = MeasureSingleLineTextWidth(text, fontSize) + paddingX;
-                    double boxWidth = Math.Clamp(desiredTextWidth, wDip, maxBoxWidth);
+                    double widthGrowthLimit = Math.Min(120, Math.Max(32, wDip * 0.35));
+                    double boxWidth = Math.Min(wDip + widthGrowthLimit, maxBoxWidth);
                     double availableW = Math.Max(10, boxWidth - paddingX);
-                    fontSize = CalculateFontSizeForOriginalBox(text, availableW, hDip, paddingY);
+                    double fontSize = CalculateFontSizeForOriginalBox(text, availableW, hDip, paddingY);
 
                     double textHeight = MeasureWrappedTextHeight(text, availableW, fontSize);
                     double desiredHeight = Math.Min(Math.Max(hDip, textHeight + paddingY), maxBoxHeight);
@@ -199,20 +197,6 @@ namespace WPF_Translator_Screen.Views
             ft.MaxTextHeight = double.MaxValue;
 
             return ft.Height;
-        }
-
-        private static double MeasureSingleLineTextWidth(string text, double fontSize)
-        {
-            var ft = new FormattedText(
-                text ?? string.Empty,
-                System.Globalization.CultureInfo.CurrentCulture,
-                FlowDirection.LeftToRight,
-                new Typeface("Segoe UI"),
-                fontSize,
-                Brushes.Black,
-                VisualTreeHelper.GetDpi(System.Windows.Application.Current.MainWindow).PixelsPerDip);
-
-            return ft.WidthIncludingTrailingWhitespace;
         }
 
         private static double CalculateFontSizeForOriginalBox(

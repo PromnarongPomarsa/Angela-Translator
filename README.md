@@ -15,9 +15,8 @@
 - การเลือกพื้นที่ขนาดใหญ่เกินไปอาจทำให้ OCR และการแปลมีความแม่นยำน้อยลง
 
 # Hotkeys
-**Action**	              **Shortcut**
-Select Screen Area	        Alt + S
-Translate Selected Area	    Alt + D
+- Select Screen Area:        **Alt + S** ,
+- Translate Selected Area:   **Alt + D**
 
 # Features
 - Selection Translate แบบเลือกพื้นที่บนหน้าจอ

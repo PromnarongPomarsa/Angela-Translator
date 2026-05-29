@@ -62,7 +62,7 @@
 - Translate RPG in-game text
 - Emulator game translation
 - Reading Japanese/Korean game dialogue
-- Translating subtitles or comic text from screen
+- Translating subtitles or Novel text from screen
 
 # Example
 Before translate

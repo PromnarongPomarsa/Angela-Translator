@@ -25,6 +25,7 @@
 <img width="1073" height="540" alt="image" src="https://github.com/user-attachments/assets/2bc0d0d5-412e-4d75-9a39-4a3335403a8d" />
 
 - การเลือกพื้นที่ขนาดใหญ่เกินไปอาจทำให้ OCR และการแปลมีความแม่นยำน้อยลง
+- จำเป็นต้องทำการ Login Ollama เสมอในการใช้งาน
 
 # Hotkeys
 - **Select Screen Area:**        Alt + S 

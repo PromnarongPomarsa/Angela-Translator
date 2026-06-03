@@ -28,9 +28,9 @@
 - จำเป็นต้องทำการ Login Ollama เสมอในการใช้งาน
 
 # Hotkeys
-- **Select Screen Area:**        Alt + S 
-- **Translate Selected Area:**   Alt + D
-- **Exit or Cencel translation:** ESC
+- **Select Screen Area:**        `Alt + S` 
+- **Translate Selected Area:**   `Alt + D`
+- **Exit or Cencel translation:** `ESC`
 
 # Features
 - Selection Translate แบบเลือกพื้นที่บนหน้าจอ

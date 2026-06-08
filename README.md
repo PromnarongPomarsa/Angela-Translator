@@ -68,10 +68,30 @@
 - Translating subtitles or Novel text from screen
 
 # Example
-Before translate
-<img width="1270" height="237" alt="image" src="https://github.com/user-attachments/assets/34f62ec7-6f33-4bbe-8b06-90bfd69215c7" />
-After translated
-<img width="1260" height="379" alt="image" src="https://github.com/user-attachments/assets/396bcf24-2e7f-4756-be1c-e1a6d2da5ead" />
+### Game Case
+
+- **RPG Game**
+Translation กับเกม RPG 
+<img width="1404" height="789" alt="image" src="https://github.com/user-attachments/assets/81264b85-dc64-414e-b07f-2232a0fefe4a" />
+<img width="1402" height="789" alt="image" src="https://github.com/user-attachments/assets/d66ff4d8-71c9-4196-bcf2-2e7ffe27e56e" />
+
+รับรู้เป้าหมายภารกิจได้ง่ายๆ
+<img width="1401" height="788" alt="image" src="https://github.com/user-attachments/assets/8d89e706-89d1-4aa1-b2ac-b8f98e46725d" />
+<img width="1400" height="788" alt="image" src="https://github.com/user-attachments/assets/1a90eed1-01bd-47ec-a38e-972d11a4233d" />
+
+เข้าใจบทสนทนาในเกม
+<img width="1403" height="787" alt="image" src="https://github.com/user-attachments/assets/88a8bd01-3d69-4591-9f1e-d73925243fa7" />
+<img width="1401" height="787" alt="image" src="https://github.com/user-attachments/assets/048de3c2-ec56-4f92-a687-cfc56b17979e" />
+
+- **Visual Novels Game**
+สืบสวนไปพร้อมกันกับตัวละคร
+<img width="1402" height="784" alt="image" src="https://github.com/user-attachments/assets/adbc2503-5833-4c82-a3a3-8c54ba51752f" />
+<img width="1402" height="787" alt="image" src="https://github.com/user-attachments/assets/28140eb8-5423-49a9-9150-c394b3fdd22a" />
+
+
+
+
+
 
 # 📥 การติดตั้ง
 1) ดาวน์โหลดไฟล์ติดตั้งจากหน้า [Release](https://github.com/PromnarongPomarsa/Angela-Translator/releases/latest) หรือกด [Download](https://github.com/PromnarongPomarsa/Angela-Translator/releases/download/v2.1.1/AngelaTranslator-Setup.exe ) ได้จากตรงนี้

@@ -73,3 +73,22 @@ Before translate
 After translated
 <img width="1260" height="379" alt="image" src="https://github.com/user-attachments/assets/396bcf24-2e7f-4756-be1c-e1a6d2da5ead" />
 
+# 📥 การติดตั้ง
+1) ดาวน์โหลดไฟล์ติดตั้งจากหน้า [Release](https://github.com/PromnarongPomarsa/Angela-Translator/releases/latest)
+2) เปิดไฟล์ติดตั้งและเลือกตำแหน่ง (Path) ที่ต้องการติดตั้ง
+3) หากมีหน้าติดตั้ง Ollama ปรากฏขึ้น ให้ดำเนินการติดตั้ง Ollama (จำเป็น)
+4) เมื่อติดตั้ง Ollama เสร็จแล้ว ให้เข้าสู่ระบบ (Login) Ollama (จำเป็น)
+   <img width="1347" height="787" alt="image" src="https://github.com/user-attachments/assets/b8cca889-72a0-4745-bc39-b35514fef017" />
+  <img width="823" height="666" alt="image" src="https://github.com/user-attachments/assets/fc8802ce-e2d2-40e1-9c32-c2eca2eafa0b" />
+  <img width="546" height="587" alt="image" src="https://github.com/user-attachments/assets/ba6586b9-609e-48cf-9568-148281b82ae7" />
+  
+   - แนะนำให้ Login ด้วย Google
+  <img width="725" height="578" alt="image" src="https://github.com/user-attachments/assets/da3c3ae4-edf4-4e88-ad5b-b9672e251d8a" />
+  
+   - กด Connect device เพื่อเข้าใช้งานเป็นอันเสร็จ
+6) เมื่อติดตั้ง Angela Translator เสร็จแล้ว สามารถเปิดโปรแกรมและใช้งานได้ทันที
+  
+หมายเหตุ
+- จำเป็นต้องติดตั้ง Ollama ก่อนใช้งาน Angela Translator
+- จำเป็นต้อง Login Ollama ก่อนเปิดใช้งาน Angela Translator ทุกครั้ง
+

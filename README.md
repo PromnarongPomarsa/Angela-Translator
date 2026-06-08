@@ -74,7 +74,7 @@ After translated
 <img width="1260" height="379" alt="image" src="https://github.com/user-attachments/assets/396bcf24-2e7f-4756-be1c-e1a6d2da5ead" />
 
 # 📥 การติดตั้ง
-1) ดาวน์โหลดไฟล์ติดตั้งจากหน้า [Release](https://github.com/PromnarongPomarsa/Angela-Translator/releases/latest)
+1) ดาวน์โหลดไฟล์ติดตั้งจากหน้า [Release](https://github.com/PromnarongPomarsa/Angela-Translator/releases/latest) หรือกด [Download](https://github.com/PromnarongPomarsa/Angela-Translator/releases/download/v2.1.1/AngelaTranslator-Setup.exe ) ได้จากตรงนี้
 2) เปิดไฟล์ติดตั้งและเลือกตำแหน่ง (Path) ที่ต้องการติดตั้ง
 3) หากมีหน้าติดตั้ง Ollama ปรากฏขึ้น ให้ดำเนินการติดตั้ง Ollama (⚠️ **จำเป็น**)
 4) เมื่อติดตั้ง Ollama เสร็จแล้ว ให้เข้าสู่ระบบ (Login) Ollama (⚠️ **จำเป็น**)

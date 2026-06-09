@@ -92,7 +92,7 @@ Translation กับเกม RPG
 
 รับรู้เป้าหมายภารกิจได้ง่ายๆ
 <img width="1401" height="788" alt="image" src="https://github.com/user-attachments/assets/8d89e706-89d1-4aa1-b2ac-b8f98e46725d" />
-<img width="1400" height="788" alt="image" src="https://github.com/user-attachments/assets/1a90eed1-01bd-47ec-a38e-972d11a4233d" />
+<img width="1400" height="788" alt="image" src="https://github.com/user-attachments/assets/6a979a93-1cb5-45eb-82ac-e36dc4d8442a" />
 
 เข้าใจบทสนทนาในเกม
 <img width="1403" height="787" alt="image" src="https://github.com/user-attachments/assets/88a8bd01-3d69-4591-9f1e-d73925243fa7" />

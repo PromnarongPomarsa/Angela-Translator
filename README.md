@@ -22,7 +22,8 @@
 
 - ควรเลือกเฉพาะพื้นที่ข้อความที่ต้องการแปล
 - หากใช้อ่านเอกสาร (Document / PDF / Website) ควรเลือกแปลทีละ Paragraph
-<img width="1073" height="540" alt="image" src="https://github.com/user-attachments/assets/2bc0d0d5-412e-4d75-9a39-4a3335403a8d" />
+<img width="1032" height="637" alt="image" src="https://github.com/user-attachments/assets/e9c52ef5-d64e-40fc-a48e-409d149ecea5" />
+
 
 - การเลือกพื้นที่ขนาดใหญ่เกินไปอาจทำให้ OCR และการแปลมีความแม่นยำน้อยลง
 - จำเป็นต้องทำการ Login Ollama เสมอในการใช้งาน
@@ -71,6 +72,7 @@
 ### Game Case
 
 - **RPG Game**
+  
 Translation กับเกม RPG 
 <img width="1404" height="789" alt="image" src="https://github.com/user-attachments/assets/81264b85-dc64-414e-b07f-2232a0fefe4a" />
 <img width="1402" height="789" alt="image" src="https://github.com/user-attachments/assets/d66ff4d8-71c9-4196-bcf2-2e7ffe27e56e" />
@@ -84,9 +86,21 @@ Translation กับเกม RPG
 <img width="1401" height="787" alt="image" src="https://github.com/user-attachments/assets/048de3c2-ec56-4f92-a687-cfc56b17979e" />
 
 - **Visual Novels Game**
+  
 สืบสวนไปพร้อมกันกับตัวละคร
 <img width="1402" height="784" alt="image" src="https://github.com/user-attachments/assets/adbc2503-5833-4c82-a3a3-8c54ba51752f" />
 <img width="1402" height="787" alt="image" src="https://github.com/user-attachments/assets/28140eb8-5423-49a9-9150-c394b3fdd22a" />
+
+
+- **Document**
+
+  อ่านเอกสารได้ง่ายๆ
+<img width="1033" height="655" alt="image" src="https://github.com/user-attachments/assets/7e3aa488-28b3-49db-81f7-c165e7ab15d5" />
+
+<img width="1058" height="612" alt="image" src="https://github.com/user-attachments/assets/1197aa42-0b5c-44a2-9ae3-dde2318a14d5" />
+
+
+
 
 
 

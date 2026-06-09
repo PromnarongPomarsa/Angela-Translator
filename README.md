@@ -96,10 +96,10 @@ Translation กับเกม RPG
 
 เข้าใจบทสนทนาในเกม
 <img width="1403" height="787" alt="image" src="https://github.com/user-attachments/assets/88a8bd01-3d69-4591-9f1e-d73925243fa7" />
-<img width="1401" height="787" alt="image" src="https://github.com/user-attachments/assets/048de3c2-ec56-4f92-a687-cfc56b17979e" />
+<img width="1401" height="787" alt="image" src="https://github.com/user-attachments/assets/ffc4406d-391d-4bbf-8ff6-cf39468749f7" />
 
 - **Visual Novels Game**
-  
+
 สืบสวนไปพร้อมกันกับตัวละคร
 <img width="1402" height="784" alt="image" src="https://github.com/user-attachments/assets/adbc2503-5833-4c82-a3a3-8c54ba51752f" />
 <img width="1402" height="787" alt="image" src="https://github.com/user-attachments/assets/28140eb8-5423-49a9-9150-c394b3fdd22a" />

@@ -16,7 +16,7 @@
 
 ## Quick Start
 
-1. Download [AngelaTranslator-Setup.exe](https://github.com/PromnarongPomarsa/Angela-Translator/releases/download/v2.1.1/AngelaTranslator-Setup.exe) จาก Release
+1. Download [AngelaTranslator-Setup.exe](https://github.com/PromnarongPomarsa/Angela-Translator/releases/download/v2.1.2/AngelaTranslator-Setup.exe) จาก Release
 2. ติดตั้งโปรแกรม (Angela + Ollama)
 3. Login Ollama
 5. เปิด Angela Translator
@@ -79,7 +79,7 @@ Translation กับเกม RPG
 <img width="1058" height="612" alt="image" src="https://github.com/user-attachments/assets/1197aa42-0b5c-44a2-9ae3-dde2318a14d5" />
 
 # 📥 การติดตั้ง
-1) ดาวน์โหลดไฟล์ติดตั้งจากหน้า [Release](https://github.com/PromnarongPomarsa/Angela-Translator/releases/latest) หรือกด [Download](https://github.com/PromnarongPomarsa/Angela-Translator/releases/download/v2.1.1/AngelaTranslator-Setup.exe ) ได้จากตรงนี้
+1) ดาวน์โหลดไฟล์ติดตั้งจากหน้า [Release](https://github.com/PromnarongPomarsa/Angela-Translator/releases/latest) หรือกด [Download](https://github.com/PromnarongPomarsa/Angela-Translator/releases/download/v2.1.2/AngelaTranslator-Setup.exe ) ได้จากตรงนี้
 2) เปิดไฟล์ติดตั้งและเลือกตำแหน่ง (Path) ที่ต้องการติดตั้ง
 3) หากมีหน้าติดตั้ง Ollama ปรากฏขึ้น ให้ดำเนินการติดตั้ง Ollama (⚠️ **จำเป็น**)
 4) เมื่อติดตั้ง Ollama เสร็จแล้ว ให้เข้าสู่ระบบ (Login) Ollama (⚠️ **จำเป็น**)

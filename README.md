@@ -47,47 +47,6 @@ AngelaTranslator-Setup.exe จะติดตั้งทั้งโปรแ�
 - **Quick Language Change**      `Alt + C`
 - **Exit or Cencel translation:** `ESC`
 
-# Features
-- Selection Translate แบบเลือกพื้นที่บนหน้าจอ
-- OCR จับข้อความจากหน้าจอด้วย PaddleOCR
-- แปลข้อความด้วย AI Models ผ่าน Ollama
-- รองรับการใช้งานแบบ Hotkey
-- หากใช้กับเกม Dialog subtitle ให้เลือกพื้นที่ Selection เพียงแค่ครั้งเดียวและกดแปลได้เลยตลอด ไม่ต้องเลือกใหม่
-- Run แบบ System Tray เพื่อทำงานบนพื้นหลัง
-  
-  <img width="205" height="212" alt="image" src="https://github.com/user-attachments/assets/a05336b9-16f2-4b56-9704-bc61b5c8df79" />
-
-
-- การตั้งค่าสำหรับการ Run Program ทันทีเมื่อเปิดเครื่องคอมพิวเตอร์ (จำเป็นต้องกด Save เพื่อบันทึกการตั้งค่า)
-  
-  <img width="398" height="296" alt="image" src="https://github.com/user-attachments/assets/e12dcc85-a794-4c76-8859-5f4591207524" />
-
-# How It Works
-- ผู้ใช้เลือกพื้นที่บนหน้าจอ
-- โปรแกรมจับภาพเฉพาะบริเวณที่เลือก
-- ตรวจจับข้อความ
-- รวมข้อความทั้งหมดในพื้นที่ที่เลือกเข้าด้วยกัน
-- ส่งข้อความไปยัง AI Model ผ่าน Ollama
-- แสดงผลลัพธ์การแปลในกล่องข้อความ
-
-# Technologies
-- OCR Engine: PaddleOCR
-- AI Runtime: Ollama
-- UI Framework: WPF (.NET 10.0)
-
-# Requirements
-- Windows
-- Ollama installed and running
-- AI Translation Model installed in Ollama
-- PaddleOCR dependencies
-
-# Example Use Cases
-- Translate Visual Novel dialogue
-- Translate RPG in-game text
-- Emulator game translation
-- Reading Japanese/Korean game dialogue
-- Translating subtitles or Novel text from screen
-
 # Example
 ### Game Case
 
@@ -137,4 +96,47 @@ Translation กับเกม RPG
 ⚠️ **หมายเหตุ**
 - จำเป็นต้องติดตั้ง Ollama ก่อนใช้งาน Angela Translator
 - จำเป็นต้อง Login Ollama ก่อนเปิดใช้งาน Angela Translator ทุกครั้ง
+  
+# Features
+- Selection Translate แบบเลือกพื้นที่บนหน้าจอ
+- OCR จับข้อความจากหน้าจอด้วย PaddleOCR
+- แปลข้อความด้วย AI Models ผ่าน Ollama
+- รองรับการใช้งานแบบ Hotkey
+- หากใช้กับเกม Dialog subtitle ให้เลือกพื้นที่ Selection เพียงแค่ครั้งเดียวและกดแปลได้เลยตลอด ไม่ต้องเลือกใหม่
+- Run แบบ System Tray เพื่อทำงานบนพื้นหลัง
+  
+  <img width="205" height="212" alt="image" src="https://github.com/user-attachments/assets/a05336b9-16f2-4b56-9704-bc61b5c8df79" />
+
+
+- การตั้งค่าสำหรับการ Run Program ทันทีเมื่อเปิดเครื่องคอมพิวเตอร์ (จำเป็นต้องกด Save เพื่อบันทึกการตั้งค่า)
+  
+  <img width="398" height="296" alt="image" src="https://github.com/user-attachments/assets/e12dcc85-a794-4c76-8859-5f4591207524" />
+
+# How It Works
+- ผู้ใช้เลือกพื้นที่บนหน้าจอ
+- โปรแกรมจับภาพเฉพาะบริเวณที่เลือก
+- ตรวจจับข้อความ
+- รวมข้อความทั้งหมดในพื้นที่ที่เลือกเข้าด้วยกัน
+- ส่งข้อความไปยัง AI Model ผ่าน Ollama
+- แสดงผลลัพธ์การแปลในกล่องข้อความ
+
+# Technologies
+- OCR Engine: PaddleOCR
+- AI Runtime: Ollama
+- UI Framework: WPF (.NET 10.0)
+
+# Requirements
+- Windows
+- Ollama installed and running
+- AI Translation Model installed in Ollama
+- PaddleOCR dependencies
+
+# Example Use Cases
+- Translate Visual Novel dialogue
+- Translate RPG in-game text
+- Emulator game translation
+- Reading Japanese/Korean game dialogue
+- Translating subtitles or Novel text from screen
+
+
 

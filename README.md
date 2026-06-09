@@ -31,6 +31,7 @@
 # Hotkeys
 - **Select Screen Area:**        `Alt + S` 
 - **Translate Selected Area:**   `Alt + D`
+- **Quick Language Change**      `Alt + C`
 - **Exit or Cencel translation:** `ESC`
 
 # Features

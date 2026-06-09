@@ -102,7 +102,7 @@ Translation กับเกม RPG
 
 สืบสวนไปพร้อมกันกับตัวละคร
 <img width="1402" height="784" alt="image" src="https://github.com/user-attachments/assets/adbc2503-5833-4c82-a3a3-8c54ba51752f" />
-<img width="1402" height="787" alt="image" src="https://github.com/user-attachments/assets/28140eb8-5423-49a9-9150-c394b3fdd22a" />
+<img width="1402" height="787" alt="image" src="https://github.com/user-attachments/assets/e0c476c8-022d-43db-b969-0074e98fead1" />
 
 
 - **Document**

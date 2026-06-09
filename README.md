@@ -39,7 +39,7 @@ AngelaTranslator-Setup.exe จะติดตั้งทั้งโปรแ�
 
 - การเลือกพื้นที่ขนาดใหญ่เกินไปอาจทำให้ OCR และการแปลมีความแม่นยำน้อยลง
 - ⚠️ จำเป็นต้องเลือกภาษาต้นทางและภาษาที่ต้องการแปลให้ถูกต้องเสมอ
-- ⚠️ จำเป็นต้องอยู่ในสถานะ Login Ollama แล้วก่อนใช้งาน Angela Translator ทุกครั้ง (หากไม่อยู่ในสถานะ Login Ollama จะขึ้นข้อความว่า "Oop! Something went wrong during translation"
+- ⚠️ จำเป็นต้องอยู่ในสถานะ Login Ollama แล้วก่อนใช้งาน Angela Translator ทุกครั้ง หากไม่อยู่ในสถานะ Login Ollama จะขึ้นข้อความว่า "Oop! Something went wrong during translation"
 
 # Hotkeys
 - **Select Screen Area:**        `Alt + S` 

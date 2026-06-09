@@ -14,6 +14,18 @@
 - ไม่ต้องลากเลือกพื้นที่ใหม่ทุกประโยค
 - เหมาะสำหรับเกม Visual Novel และ RPG
 
+## Quick Start
+
+1. Download [AngelaTranslator-Setup.exe](https://github.com/PromnarongPomarsa/Angela-Translator/releases/download/v2.1.1/AngelaTranslator-Setup.exe) จาก Release
+2. ติดตั้งโปรแกรม (Angela + Ollama)
+3. Login Ollama
+5. เปิด Angela Translator
+6. กด Alt + S เพื่อเลือกพื้นที่
+7. กด Alt + D เพื่อแปล
+
+⚠️ **หมายเหตุ**
+AngelaTranslator-Setup.exe จะติดตั้งทั้งโปรแกรม Angela และ Ollama ด้วย
+   
 # Important Notes
 
 โปรแกรมนี้ถูกออกแบบมาสำหรับการแปลข้อความเฉพาะส่วนของหน้าจอ เน้นใช้ในการแปลเป็นประโยคหรือ Sentence จึงมีข้อแนะนำดังนี้

@@ -88,7 +88,7 @@ AngelaTranslator-Setup.exe จะติดตั้งทั้งโปรแ�
   
 Translation กับเกม RPG 
 <img width="1404" height="789" alt="image" src="https://github.com/user-attachments/assets/81264b85-dc64-414e-b07f-2232a0fefe4a" />
-<img width="1402" height="789" alt="image" src="https://github.com/user-attachments/assets/d66ff4d8-71c9-4196-bcf2-2e7ffe27e56e" />
+<img width="1402" height="789" alt="image" src="https://github.com/user-attachments/assets/de698eb6-ea37-4a9b-a381-94bae867c88f" />
 
 รับรู้เป้าหมายภารกิจได้ง่ายๆ
 <img width="1401" height="788" alt="image" src="https://github.com/user-attachments/assets/8d89e706-89d1-4aa1-b2ac-b8f98e46725d" />

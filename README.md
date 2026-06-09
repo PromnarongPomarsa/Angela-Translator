@@ -95,7 +95,7 @@ Translation กับเกม RPG
   
 ⚠️ **หมายเหตุ**
 - จำเป็นต้องติดตั้ง Ollama ก่อนใช้งาน Angela Translator
-- จำเป็นต้อง Login Ollama ก่อนเปิดใช้งาน Angela Translator ทุกครั้ง
+- จำเป็นต้องอยู่ในสถานะ Login Ollama แล้วก่อนใช้งาน Angela Translator ทุกครั้ง (หากไม่อยู่ในสถานะ Login Ollama จะขึ้นข้อความว่า "Oop! Something went wrong during translation"
   
 # Features
 - Selection Translate แบบเลือกพื้นที่บนหน้าจอ

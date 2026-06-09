@@ -34,11 +34,12 @@ AngelaTranslator-Setup.exe จะติดตั้งทั้งโปรแ�
 
 - ควรเลือกเฉพาะพื้นที่ข้อความที่ต้องการแปล
 - หากใช้อ่านเอกสาร (Document / PDF / Website) ควรเลือกแปลทีละ Paragraph
+  
 <img width="1032" height="637" alt="image" src="https://github.com/user-attachments/assets/e9c52ef5-d64e-40fc-a48e-409d149ecea5" />
 
-
 - การเลือกพื้นที่ขนาดใหญ่เกินไปอาจทำให้ OCR และการแปลมีความแม่นยำน้อยลง
-- จำเป็นต้องทำการ Login Ollama เสมอในการใช้งาน
+- ⚠️ จำเป็นต้องเลือกภาษาต้นทางและภาษาที่ต้องการแปลให้ถูกต้องเสมอ
+- ⚠️ จำเป็นต้องทำการ Login Ollama เสมอในการใช้งาน
 
 # Hotkeys
 - **Select Screen Area:**        `Alt + S` 
@@ -53,7 +54,13 @@ AngelaTranslator-Setup.exe จะติดตั้งทั้งโปรแ�
 - รองรับการใช้งานแบบ Hotkey
 - หากใช้กับเกม Dialog subtitle ให้เลือกพื้นที่ Selection เพียงแค่ครั้งเดียวและกดแปลได้เลยตลอด ไม่ต้องเลือกใหม่
 - Run แบบ System Tray เพื่อทำงานบนพื้นหลัง
-- การตั้งค่าสำหรับการ Run Program ทันทีเมื่อเปิดเครื่องคอมพิวเตอร์
+  
+  <img width="205" height="212" alt="image" src="https://github.com/user-attachments/assets/a05336b9-16f2-4b56-9704-bc61b5c8df79" />
+
+
+- การตั้งค่าสำหรับการ Run Program ทันทีเมื่อเปิดเครื่องคอมพิวเตอร์ (จำเป็นต้องกด Save เพื่อบันทึกการตั้งค่า)
+  
+  <img width="398" height="296" alt="image" src="https://github.com/user-attachments/assets/e12dcc85-a794-4c76-8859-5f4591207524" />
 
 # How It Works
 - ผู้ใช้เลือกพื้นที่บนหน้าจอ
@@ -66,7 +73,7 @@ AngelaTranslator-Setup.exe จะติดตั้งทั้งโปรแ�
 # Technologies
 - OCR Engine: PaddleOCR
 - AI Runtime: Ollama
-- UI Framework: WPF (.NET)
+- UI Framework: WPF (.NET 10.0)
 
 # Requirements
 - Windows
@@ -105,20 +112,12 @@ Translation กับเกม RPG
 <img width="1402" height="787" alt="image" src="https://github.com/user-attachments/assets/e0c476c8-022d-43db-b969-0074e98fead1" />
 
 
-- **Document**
+- **Document Case**
 
   อ่านเอกสารได้ง่ายๆ
 <img width="1033" height="655" alt="image" src="https://github.com/user-attachments/assets/7e3aa488-28b3-49db-81f7-c165e7ab15d5" />
 
 <img width="1058" height="612" alt="image" src="https://github.com/user-attachments/assets/1197aa42-0b5c-44a2-9ae3-dde2318a14d5" />
-
-
-
-
-
-
-
-
 
 # 📥 การติดตั้ง
 1) ดาวน์โหลดไฟล์ติดตั้งจากหน้า [Release](https://github.com/PromnarongPomarsa/Angela-Translator/releases/latest) หรือกด [Download](https://github.com/PromnarongPomarsa/Angela-Translator/releases/download/v2.1.1/AngelaTranslator-Setup.exe ) ได้จากตรงนี้

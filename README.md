@@ -137,7 +137,7 @@ Translation กับเกม RPG
 # Requirements
 - Windows
 - Ollama ที่ติดตั้งแล้ว
-- AI Model ที่ติดตั้งโดย Ollama (จะ Auto ติดตั้งให้เลยเมื่อลงโปรแกรม)
+- AI Model ที่ติดตั้งโดย Ollama
 - PaddleOCR dependencies
 
 # Example Use Cases

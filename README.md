@@ -34,12 +34,11 @@ AngelaTranslator-Setup.exe จะติดตั้งทั้งโปรแ�
 
 - ควรเลือกเฉพาะพื้นที่ข้อความที่ต้องการแปล
 - หากใช้อ่านเอกสาร (Document / PDF / Website) ควรเลือกแปลทีละ Paragraph
-  
-<img width="1032" height="637" alt="image" src="https://github.com/user-attachments/assets/e9c52ef5-d64e-40fc-a48e-409d149ecea5" />
-
 - การเลือกพื้นที่ขนาดใหญ่เกินไปอาจทำให้ OCR และการแปลมีความแม่นยำน้อยลง
 - ⚠️ จำเป็นต้องเลือกภาษาต้นทางและภาษาที่ต้องการแปลให้ถูกต้องเสมอ
 - ⚠️ จำเป็นต้องอยู่ในสถานะ Login Ollama แล้วก่อนใช้งาน Angela Translator ทุกครั้ง หากไม่อยู่ในสถานะ Login Ollama จะขึ้นข้อความว่า "Oop! Something went wrong during translation"
+- ⚠️ หากใช้งานร่วมกับเกมที่รันในโหมด Full Screen (เช่น Resident Evil, Apex Legends หรือเกม AAA อื่น ๆ) โปรดเปลี่ยนโหมดการแสดงผลเป็น **Windowed** หรือ **Borderless Windowed** เพื่อให้โปรแกรมทำงานได้อย่างถูกต้อง
+
 
 # Hotkeys
 - **Select Screen Area:**        `Alt + S` 

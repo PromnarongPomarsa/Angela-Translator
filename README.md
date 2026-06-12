@@ -45,7 +45,7 @@ AngelaTranslator-Setup.exe จะติดตั้งทั้งโปรแ�
 
    <img width="643" height="137" alt="image" src="https://github.com/user-attachments/assets/da6ae4e4-2a4c-47ce-a987-7d12f7737592" />
 
-- ⚠️ หากใช้งานร่วมกับเกมที่รันในโหมด Full Screen (เช่น Resident Evil, Apex Legends หรือเกม AAA อื่น ๆ) โปรดเปลี่ยนโหมดการแสดงผลเป็น **Windowed** หรือ **Borderless Windowed** เพื่อให้โปรแกรมทำงานได้อย่างถูกต้อง
+- ⚠️ หากใช้งานร่วมกับเกมที่รันในโหมด Full Screen (เช่น Resident Evil, Apex Legends หรือเกม AAA อื่น ๆ) โปรดเปลี่ยนโหมดการแสดงผลของเกมเป็น **Windowed** หรือ **Borderless Windowed** เพื่อให้โปรแกรมทำงานได้อย่างถูกต้อง
 
 
 # Hotkeys

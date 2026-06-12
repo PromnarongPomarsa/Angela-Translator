@@ -17,7 +17,7 @@
 ## Quick Start
 
 1. Download [AngelaTranslator-Setup.exe](https://github.com/PromnarongPomarsa/Angela-Translator/releases/download/v2.1.2/AngelaTranslator-Setup.exe) จาก Release
-2. ติดตั้งโปรแกรม (Angela + Ollama) ([วิธีติดตั้งอยู่ด้านล่าง](#📥การติดตั้ง))
+2. ติดตั้งโปรแกรม (Angela + Ollama) ([วิธีติดตั้งอยู่ด้านล่าง](#การติดตั้ง))
 3. Login Ollama
 5. เปิด Angela Translator
 6. กด Alt + S เพื่อเลือกพื้นที่

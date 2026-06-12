@@ -41,9 +41,9 @@ AngelaTranslator-Setup.exe จะติดตั้งทั้งโปรแ�
 
 - ⚠️ จำเป็นต้องอยู่ในสถานะ Login Ollama แล้วก่อนใช้งาน Angela Translator ทุกครั้ง หากไม่อยู่ในสถานะ Login Ollama จะขึ้นข้อความว่า "Oop! Something went wrong during translation"
   
-<img width="643" height="137" alt="image" src="https://github.com/user-attachments/assets/29661c26-a632-4a6d-8c8c-136b465ac82f" />
+   <img width="643" height="137" alt="image" src="https://github.com/user-attachments/assets/29661c26-a632-4a6d-8c8c-136b465ac82f" />
 
-<img width="665" height="138" alt="image" src="https://github.com/user-attachments/assets/8466cc40-7878-4af8-9d02-f94698c0b87a" />
+   <img width="665" height="138" alt="image" src="https://github.com/user-attachments/assets/8466cc40-7878-4af8-9d02-f94698c0b87a" />
 
 - ⚠️ หากใช้งานร่วมกับเกมที่รันในโหมด Full Screen (เช่น Resident Evil, Apex Legends หรือเกม AAA อื่น ๆ) โปรดเปลี่ยนโหมดการแสดงผลเป็น **Windowed** หรือ **Borderless Windowed** เพื่อให้โปรแกรมทำงานได้อย่างถูกต้อง
 

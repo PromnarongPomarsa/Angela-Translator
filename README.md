@@ -3,6 +3,13 @@
 
 โปรแกรมจะจับข้อความจากพื้นที่ที่เลือกด้วย key shortcut `Alt S` เพื่อทำการ OCR แล้วนำข้อความทั้งหมดในพื้นที่นั้นมารวมและเรียงต่อกันเป็นประโยคก่อนทำการแปล เพื่อให้ได้ผลลัพธ์ที่เหมาะกับบทสนทนาในเกมหรือข้อความที่ถูกแบ่งหลายบรรทัดบนหน้าจอ
 
+ตั้งแต่ Version 2.1.5 จะรองรับการแปลผ่าน AI หลายรูปแบบ ได้แก่
+- Ollama (Cloud AI)
+- Gemini API
+- Groq API
+
+ผู้ใช้งานสามารถเลือก Engine ที่ต้องการใช้งานได้ตามความเหมาะสม
+
 ### คำศัพท์เฉพาะ
 - OCR คือ โปรแกรมที่ใช้อ่านข้อความจากรูปภาพ
 - Ollama คือ โปรแกรม Runtime ที่ใช้สำหรับ Run AI ทั้งในรูปแบบ Local หรือ Cloud ซึ่งในโปรเจคนี้จะนำมาใช้สำหรับการแปลเท่านั้น
@@ -47,6 +54,30 @@ AngelaTranslator-Setup.exe จะติดตั้งทั้งโปรแ�
 
 - ⚠️ หากใช้งานร่วมกับเกมที่รันในโหมด Full Screen (เช่น Resident Evil, Apex Legends หรือเกม AAA อื่น ๆ) โปรดเปลี่ยนโหมดการแสดงผลของเกมเป็น **Windowed** หรือ **Borderless Windowed** เพื่อให้โปรแกรมทำงานได้อย่างถูกต้อง
 
+# AI Providers
+
+Angela Translator รองรับการแปลผ่าน AI หลายรูปแบบ
+
+| Provider | ประเภท |
+|-----------|-----------|
+| Ollama | Cloud AI |
+| Gemini | Cloud AI |
+| Groq | Cloud AI |
+
+### Ollama
+- ทำงานบนเครื่อง Server ของ Ollama เนื่องจากใช้ Model Cloud
+- ไม่จำเป็นต้องใช้ API Key
+- เหมาะสำหรับผู้ที่ไม่ต้องการใช้ Key และง่ายต่อการเข้าใช้งาน
+
+### Groq
+- ใช้งานผ่าน Groq API
+- ต้องสร้าง API Key ด้วยตนเอง
+- จุดเด่นคือความเร็วในการตอบสนอง
+
+### Gemini
+- ใช้งานผ่าน Google Gemini API
+- ต้องสร้าง API Key ด้วยตนเอง
+- ยังคงเป็น Bata เนื่องจาก Models ที่ใช้ได้ดีมี Limit ที่ต่ำจนเกินไป
 
 # Hotkeys
 - **Select Screen Area:**        `Alt + S` 
@@ -109,17 +140,33 @@ Translation กับเกม RPG
 # Features
 - Selection Translate แบบเลือกพื้นที่บนหน้าจอ
 - OCR จับข้อความจากหน้าจอด้วย PaddleOCR
-- แปลข้อความด้วย AI Models ผ่าน Ollama
+- แปลข้อความด้วย AI Models ผ่าน Ollama, Gemini และ Groq
+- สามารถสลับ AI Provider ได้ตามต้องการ
+
+  <img width="606" height="392" alt="image" src="https://github.com/user-attachments/assets/93d4bc6b-95ce-4092-afb5-d395381a85f0" />
+
 - รองรับการใช้งานแบบ Hotkey
 - หากใช้กับเกม Dialog subtitle ให้เลือกพื้นที่ Selection เพียงแค่ครั้งเดียวและกดแปลได้เลยตลอด ไม่ต้องเลือกใหม่
 - Run แบบ System Tray เพื่อทำงานบนพื้นหลัง
   
   <img width="205" height="212" alt="image" src="https://github.com/user-attachments/assets/a05336b9-16f2-4b56-9704-bc61b5c8df79" />
 
-
 - การตั้งค่าสำหรับการ Run Program ทันทีเมื่อเปิดเครื่องคอมพิวเตอร์ (จำเป็นต้องกด Save เพื่อบันทึกการตั้งค่า)
   
-  <img width="398" height="296" alt="image" src="https://github.com/user-attachments/assets/e12dcc85-a794-4c76-8859-5f4591207524" />
+  <img width="607" height="398" alt="image" src="https://github.com/user-attachments/assets/1f0aff6e-2731-4e7c-9e93-c26c9241c6e1" />
+
+### การใช้งาน Gemini หรือ Groq
+
+หากต้องการใช้งาน Gemini หรือ Groq แทน Ollama
+
+1. สร้าง API Key จากผู้ให้บริการ
+2. เปิด Angela Translator
+3. ไปที่ Settings
+4. เลือก AI Provider ที่ต้องการ
+5. กรอก API Key
+6. กด Save
+
+⚠️ API Key จะต้องสร้างและจัดการโดยผู้ใช้งานเอง
 
 # How It Works
 - ผู้ใช้เลือกพื้นที่บนหน้าจอ

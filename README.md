@@ -194,5 +194,8 @@ Translation กับเกม RPG
 - Reading Japanese/Korean game dialogue
 - Translating subtitles or Novel text from screen
 
+# Link สำหรับขอ AI Key ของ Groq
+- https://console.groq.com/keys
+
 
 
